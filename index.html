@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Profile card component</title>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 16px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Kumbh Sans', sans-serif;
+      background-color: hsl(185, 75%, 39%);
+      background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg"); 
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      content: "";
+    } 
+    main{
+      padding: 0 14%;
+    }
+    .container{
+      width: 300px;
+      height: auto;
+      margin: auto;
+      margin-top: 100px;
+      position: relative;
+      padding: 0 5%;
+    }
+    .bg-img{
+      width: 100%;
+      height: 130px;
+      background-image: url("images/bg-pattern-card.svg");
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      z-index: -1;
+    }
+    .sub-container{
+      background-color: #fff;
+      padding-bottom: 8%;
+      /* padding-top: 4%; */
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+    .img-container{
+      width: 90px;
+      margin: auto;
+    }
+   .image-victor{
+     width: 90px;
+     border-radius: 50%;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     position: absolute;
+     top: 80px;
+     border: 5px solid #fff;
+   }
+   h1{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 40px;
+    color: hsl(229, 23%, 23%);
+   }
+   .abt-victor{
+    text-align: center;
+    padding-bottom: 8px;
+    padding-top: 20px;
+   }
+   .number{
+     color: hsl(0, 0%, 59%);
+     font-weight: 400;
+     font-size: 16px;
+     margin-left: 5px;
+   }
+   .london-text{
+    color: hsl(0, 0%, 59%);
+    font-size: 12px;
+    /* margin:0;
+    padding:0; */
+    position: relative;
+    top: -4px;
+   }
+   .followers{
+        padding: 0 10%;
+        margin: auto;
+        margin-top: -20px;
+   }
+   .flw-text{
+    color: hsl(0, 0%, 59%);
+    font-size: 12px;
+    margin-top: -8px;
+   }
+   .about-followers{
+    display: grid;
+    grid-template-columns: 60px 100px 60px;
+    grid-template-rows: 20px auto 25px; 
+    column-gap: 5px;
+    row-gap: 10px;
+    justify-content: center;
+   }
+   .attribution{
+     margin-top: 80px;
+   }
+  </style>
+</head>
+<body>
+  <main class="container">
+        <div class="bg-img" style="z-index: 3">
+         
+        </div>
+        <div class="sub-container">
+          <div class="img-container">
+            <img style="z-index: 4" class="image-victor" src="images/image-victor.jpg" alt="">  
+          </div>
+          <div class="abt-victor">
+            <h1>Victor Crest  <span class="number">26</span></h1>
+            <span class="london-text">London</span>
+          </div>
+           <hr>
+           <div class="about-followers">
+            <div class="followers">
+              <h1>80K</h1>
+              <p class="flw-text">Followers</p>
+            </div>
+            <div class="followers">
+              <h1>803K</h1>
+              <p class="flw-text">Likes</p>
+            </div>
+            <div class="followers">
+              <h1>1.4K</h1>
+              <p class="flw-text">Photos</p>
+            </div>
+           </div>
+         
+      
+        </div>
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Charles Mambo</a>.
+  </div>
+</body>
+</html>
